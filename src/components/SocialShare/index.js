@@ -152,7 +152,11 @@ const SocialShare = (props) => {
 				openUrl(theLink)
 			} else {
 				try {
-					await Linking.openURL(theLink)
+					if (Platform.OS === 'web') {
+						window.open(theLink, '_blank');
+					} else {
+						await Linking.openURL(theLink)
+					}
 				} catch {
 					if (notSupported) {
 						notSupported();
