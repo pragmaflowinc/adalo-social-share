@@ -1,7 +1,7 @@
 {
   "name": "adalo-share-on-social-media",
   "description": "Components that facilitate sharing on Social Media",
-  "version": "1.0.6",
+  "version": "1.0.6 ",
   "main": "index.js",
   "license": "ISC",
   "author": "Steven McKeown",
