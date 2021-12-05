@@ -34,7 +34,6 @@
     "displayName": "Which site do you want to share this with?",
     "type": "text",
     "defaultValue": "facebook",
-    "helpText": "Not all parameters are needed or supported, check [here](https://adalo.pragmaflowservers.com/social-media-helper) to see what you need",
     "control": {
       "type": "menu",
       "options": [
@@ -75,58 +74,108 @@
       ]
     }
   },
-  { "name": "url", "displayName": "The URL to share", "type": "text" },
-  { "name": "title", "displayName": "The title to share", "type": "text" },
-  { "name": "text", "displayName": "The text to share", "type": "text" },
+  { 
+    "name": "url", 
+    "displayName": "The URL to share", 
+    "type": "text",
+    "enabled": { 
+      "socialSite": ["add.this", "buffer", "douban", "evernote", "getpocket", "facebook", "flattr", "flipboard", "gmail", "google.bookmarks", "instapaper", "line.me", "linkedin", "livejournal", "hacker.news", "ok.ru", "pinterest", "qzone", "reddit", "renren", "skype", "telegram.me", "tumblr", "twitter", "vk", "weibo", "xing"]
+    } 
+  },
+  { 
+    "name": "title", 
+    "displayName": 
+    "The title to share", 
+    "type": "text",
+    "enabled": { 
+      "socialSite": ["diaspora", "email", "evernote", "flattr", "gmail", "google.bookmarks", "instapaper", "hacker.news", "reddit", "tumblr", "vk", "weibo", "yahoo"]
+    } 
+  },
+  { 
+    "name": "text", 
+    "displayName": "The text to share", 
+    "type": "text" ,
+    "enabled": { 
+      "socialSite": ["buffer", "douban", "facebook", "flattr", "flipboard", "google.bookmarks", "line.me", "livejournal", "renren", "skype", "sms", "telegram.me", "threema", "twitter", "whatsapp", "yahoo"]
+    } 
+  },
   {
     "name": "desc",
     "displayName": "The description to share",
-    "type": "text"
+    "type": "text",
+    "enabled": { 
+      "socialSite": ["email", "instapaper", "renren", "tumblr", "vk"]
+    } 
   },
   {
     "name": "via",
     "displayName": "The via information to share",
-    "type": "text"
+    "type": "text",
+    "enabled": { 
+      "socialSite": ["twitter"]
+    } 
   },
   {
     "name": "hashtags",
-    "displayName": "The hashtags to share",
-    "type": "text"
+    "displayName": "The hashtags to share (comma seperated, no spaces)",
+    "type": "text",
+    "enabled": { 
+      "socialSite": ["flattr", "google.bookmarks", "tumblr", "twitter"]
+    } 
   },
   {
     "name": "language",
     "displayName": "The language the share is in",
-    "type": "text"
+    "type": "text",
+    "enabled": { 
+      "socialSite": ["flattr"]
+    } 
   },
   {
     "name": "userid",
     "displayName": "The user id of the sharer",
-    "type": "text"
+    "type": "text",
+    "enabled": { 
+      "socialSite": ["flattr", "threema"]
+    } 
   },
   {
     "name": "category",
     "displayName": "The category to share",
-    "type": "text"
+    "type": "text",
+    "enabled": { 
+      "socialSite": ["flattr"]
+    } 
   },
   {
     "name": "phonenumber",
     "displayName": "The phone number to share to",
-    "type": "text"
+    "type": "text",
+    "enabled": { "socialSite": ["whatsapp", "sms", "telegram.me", "whatsapp"] }
   },
   {
     "name": "emailaddress",
     "displayName": "The email address to share to",
-    "type": "text"
+    "type": "text",
+    "enabled": { 
+      "socialSite": ["email", "gmail", "yahoo"]
+    } 
   },
   {
     "name": "cemailaddress",
     "displayName": "The CC email address to share to",
-    "type": "text"
+    "type": "text",
+    "enabled": { 
+      "socialSite": ["gmail"]
+    } 
   },
   {
     "name": "bccemailaddress",
     "displayName": "The BCC email address to share to",
-    "type": "text"
+    "type": "text",
+    "enabled": { 
+      "socialSite": ["gmail"]
+    } 
   },
   {
     "name": "openUrl",
