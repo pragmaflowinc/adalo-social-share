@@ -1,0 +1,154 @@
+{
+  "displayName": "Social Share",
+  "defaultWidth": 160,
+  "defaultHeight": 36,
+  "resizeY": true,
+  "components": "./index.js",
+  "icon": "./example-thumbnail.png",
+  "props": [
+  {
+    "name": "label",
+    "displayName": "Label for the button",
+    "type": "text",
+    "default": "Share",
+    "styles": {
+      "fontFamily": "@body",
+      "color": "#757575",
+      "fontWeight": "normal"
+    }
+  },
+  {
+    "name": "icon",
+    "displayName": "Icon",
+    "type": "icon",
+    "default": "add"
+  },
+  {
+    "name": "backgroundColor",
+    "displayName": "Background Color",
+    "type": "color",
+    "default": "@primary"
+  },
+  {
+    "name": "socialSite",
+    "displayName": "Which site do you want to share this with?",
+    "type": "text",
+    "defaultValue": "facebook",
+    "helpText": "Not all parameters are needed or supported, check [here](https://adalo.pragmaflowservers.com/social-media-helper) to see what you need",
+    "control": {
+      "type": "menu",
+      "options": [
+          { "value": "add.this", "label": "AddThis" },
+          { "value": "blogger", "label": "Blogger" },
+          { "value": "buffer", "label": "Buffer" },
+          { "value": "diaspora", "label": "Diaspora" },
+          { "value": "douban", "label": "Douban" },
+          { "value": "email", "label": "EMail" },
+          { "value": "evernote", "label": "EverNote" },
+          { "value": "getpocket", "label": "Pocket" },
+          { "value": "facebook", "label": "FaceBook" },
+          { "value": "flattr", "label": "Flattr" },
+          { "value": "flipboard", "label": "FlipBoard" },
+          { "value": "google.bookmarks", "label": "GoogleBookmarks" },
+          { "value": "instapaper", "label": "InstaPaper" },
+          { "value": "line.me", "label": "Line.me" },
+          { "value": "linkedin", "label": "LinkedIn" },
+          { "value": "livejournal", "label": "LiveJournal" },
+          { "value": "gmail", "label": "GMail" },
+          { "value": "hacker.news", "label": "HackerNews" },
+          { "value": "ok.ru", "label": "OK.ru" },
+          { "value": "pinterest", "label": "Pinterest" },
+          { "value": "qzone", "label": "QZone" },
+          { "value": "reddit", "label": "Reddit" },
+          { "value": "renren", "label": "RenRen" },
+          { "value": "skype", "label": "Skype" },
+          { "value": "sms", "label": "SMS" },
+          { "value": "telegram.me", "label": "Telegram.me" },
+          { "value": "threema", "label": "Threema" },
+          { "value": "tumblr", "label": "Tumblr" },
+          { "value": "twitter", "label": "Twitter" },
+          { "value": "vk", "label": "VK" },
+          { "value": "weibo", "label": "Weibo" },
+          { "value": "whatsapp", "label": "WhatsApp" },
+          { "value": "xing", "label": "Xing" },
+          { "value": "yahoo", "label": "Yahoo" }
+      ]
+    }
+  },
+  { "name": "url", "displayName": "The URL to share", "type": "text" },
+  { "name": "title", "displayName": "The title to share", "type": "text" },
+  { "name": "text", "displayName": "The text to share", "type": "text" },
+  {
+    "name": "desc",
+    "displayName": "The description to share",
+    "type": "text"
+  },
+  {
+    "name": "via",
+    "displayName": "The via information to share",
+    "type": "text"
+  },
+  {
+    "name": "hashtags",
+    "displayName": "The hashtags to share",
+    "type": "text"
+  },
+  {
+    "name": "language",
+    "displayName": "The language the share is in",
+    "type": "text"
+  },
+  {
+    "name": "userid",
+    "displayName": "The user id of the sharer",
+    "type": "text"
+  },
+  {
+    "name": "category",
+    "displayName": "The category to share",
+    "type": "text"
+  },
+  {
+    "name": "phonenumber",
+    "displayName": "The phone number to share to",
+    "type": "text"
+  },
+  {
+    "name": "emailaddress",
+    "displayName": "The email address to share to",
+    "type": "text"
+  },
+  {
+    "name": "cemailaddress",
+    "displayName": "The CC email address to share to",
+    "type": "text"
+  },
+  {
+    "name": "bccemailaddress",
+    "displayName": "The BCC email address to share to",
+    "type": "text"
+  },
+  {
+    "name": "openUrl",
+    "displayName": "If you add an action here, you will get the url and the button will not automatically open",
+    "type": "action",
+    "arguments": [
+      {
+        "displayName": "The Link you need to open",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "notSupported",
+    "displayName": "Triggered if the user does not have an app that supports the link",
+    "type": "action",
+    "arguments": [
+      {
+        "displayName": "The Link that was not supported",
+        "type": "text"
+      }
+    ]
+  }
+  ]
+}

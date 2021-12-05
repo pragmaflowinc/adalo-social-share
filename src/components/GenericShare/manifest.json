@@ -1,0 +1,54 @@
+{
+  "displayName": "Generic Share",
+  "defaultWidth": 160,
+  "defaultHeight": 36,
+  "resizeY": true,
+  "components": "./index.js",
+  "icon": "./example-thumbnail.png",
+  "props": [
+    {
+      "name": "title",
+      "displayName": "Label for the button",
+      "type": "text",
+      "default": "Share",
+      "styles": {
+        "fontFamily": "@body",
+        "color": "#757575",
+        "fontWeight": "normal"
+      }
+    },
+    {
+      "name": "icon",
+      "displayName": "Icon",
+      "type": "icon",
+      "default": "add"
+    },
+    {
+      "name": "backgroundColor",
+      "displayName": "Background Color",
+      "type": "color",
+      "default": "@primary"
+    },
+    {
+      "name": "message",
+      "displayName": "The message to share",
+      "type": "text",
+      "default": "Thanks PramgaFlow!"
+    },
+    {
+      "name": "sharedAction",
+      "displayName": "Triggered when the share was successful (Native only)",
+      "type": "action"
+    },
+    {
+      "name": "dismissedAction",
+      "displayName": "Triggered when the share was dismissed (iOS only)",
+      "type": "action"
+    },
+    {
+      "name": "errorAction",
+      "displayName": "Triggered if there was an error when sharing",
+      "type": "action"
+    }
+  ]
+}

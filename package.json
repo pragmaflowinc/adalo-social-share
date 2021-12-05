@@ -1,0 +1,38 @@
+{
+  "name": "adalo-share-on-social-media",
+  "description": "Components that facilitate sharing on Social Media",
+  "version": "1.0.5",
+  "main": "index.js",
+  "license": "ISC",
+  "author": "Steven McKeown",
+  "scripts": {
+    "start": "adalo dev",
+    "login": "adalo login",
+    "publish": "adalo publish"
+  },
+  "adalo": {
+    "logo": "./example-logo.png",
+    "displayName": "Adalo Share on Social Media",
+    "components": [
+      {
+        "name": "GenericShare",
+        "manifest": "./src/components/GenericShare/manifest.json"
+      },
+      {
+        "name": "SocialShare",
+        "manifest": "./src/components/SocialShare/manifest.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@adalo/cli": "^0.0.44",
+    "react": "^16.9.0",
+    "react-art": "^16.6.0",
+    "react-dom": "^16.9.0",
+    "react-native-web": "^0.9.5"
+  },
+  "dependencies": {
+    "@protonapp/react-native-material-ui": "^2.0.6",
+    "react-native-vector-icons": "^9.0.0"
+  }
+}
